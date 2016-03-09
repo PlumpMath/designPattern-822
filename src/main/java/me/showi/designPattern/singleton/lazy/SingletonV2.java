@@ -6,7 +6,8 @@ package me.showi.designPattern.singleton.lazy;
  */
 public class SingletonV2 {
 
-	private static SingletonV2 single = null;
+	//关键字volatile,保证可见性
+	private static volatile SingletonV2 single = null;
 
 	private SingletonV2() {
 
